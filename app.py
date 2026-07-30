@@ -9,12 +9,12 @@ import gdown
 
 if not os.path.exists("FaceShape.keras"):
     gdown.download(
-        "YOUR_GOOGLE_DRIVE_FILE_LINK",
+        "https://drive.google.com/file/d/1K2igQ9CLrmKPO2586wZGjhEGPOV1p2ML/view",
         "FaceShape.keras",
         quiet=False
     )
 
-model = keras.models.load_model("FaceShape.keras")
+# model = keras.models.load_model("FaceShape.keras")
 
 path = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
 
