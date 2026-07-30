@@ -14,7 +14,7 @@ if not os.path.exists("FaceShape.keras"):
         quiet=False
     )
 
-# model = keras.models.load_model("FaceShape.keras")
+model = keras.models.load_model("FaceShape.keras")
 
 path = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
 
